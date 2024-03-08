@@ -1,0 +1,51 @@
+.header {
+    background-color: #000000;
+    padding: 4px 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title1 {
+        color: red;
+    }
+
+    &__pills {
+        list-style: none;
+        display: inline-block;
+        margin-right: 16px;
+        padding: 6px;
+        border-radius: 16px;
+        background-color: #d8d8d8;
+        &:hover{
+            background-color: #e6e6e6;
+        }
+    }
+
+    
+    &__anchor {
+        text-decoration: none;
+        color: red;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .header{
+        &__pills {
+            margin-right: 12px;
+            padding: 4px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header{
+        &__pills {
+            margin-right: 8px;
+            padding: 2px;
+        }
+    }
+}

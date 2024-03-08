@@ -1,0 +1,183 @@
+.card {
+    height: auto;
+    position: relative;
+
+    &__body {
+        height: 100%;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6.7vw;
+    }
+
+    &__title2 {
+        color: red;
+        padding: 12px;
+        box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+        0px 0px 30px 26px rgba($color: #000000, $alpha: 0.8);
+        max-width: 260px;
+        border-radius: 16px;
+    }
+
+    &__ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 0.5%;
+        align-items: stretch;
+    }
+
+    &__li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 1.1em;
+        padding-right: 1.1em;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        border-radius: 10px;
+    }
+
+    &__title-card{
+        padding: 1vw;
+        color: red;
+    }
+
+    &__image {
+        width: 20vw;
+        height: 12vw;
+    }
+
+    &__paragraph {
+        margin: 8px, 8px, 8px;
+        padding: 8px, 8px, 0, 8px;
+        color: red;
+    }
+
+    &__leia {
+        padding: 8px;
+        margin: 0.5em;
+        background-color: #d8d8d8;
+        border-radius: 16px;
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
+    }
+    
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5%;
+    }
+    
+    &__anchor{
+        box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+        0px 0px 30px 26px rgba($color: #000000, $alpha: 0.8);
+        padding: 20px;
+        border-radius: 16px;
+        text-decoration: none;
+        color: red;
+        margin-top: auto;
+        text-decoration: underline;
+        &:hover {
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.6),
+            0px 0px 30px 26px rgba($color: #000000, $alpha: 0.6);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card{
+        height: auto;
+        
+        &__body {
+           padding: 20px 0 40px 0; 
+        }
+
+        &__title2 {
+            padding: 0;
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+            0px 0px 20px 20px rgba($color: #000000, $alpha: 0.8);
+            max-width: 260px;
+            border-radius: 16px;
+        }
+
+        &__ul {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            column-gap: 0.5%;
+            align-items: stretch;
+        }
+
+        &__li{
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            margin-bottom: 8px;
+        }
+
+        &__image {
+            width: 100%;
+            height: 50%;
+        }
+
+        &__anchor{
+            margin-top: 8px;
+            padding: 6px;
+            &:hover{
+                box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+                0px 0px 10px 10px rgba($color: #000000, $alpha: 0.8);
+            }
+        }
+    } 
+}
+
+@media (max-width: 767px) {
+    .card{
+        height: auto;
+        position: static;
+        
+        &__body {
+           padding: 20px 10px 10px 10px;
+        }
+
+        &__title2 {
+            padding: 0;
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+            0px 0px 10px 10px rgba($color: #000000, $alpha: 0.8);
+            max-width: 260px;
+            border-radius: 16px;
+        }
+
+        &__ul {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__li{
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            margin-bottom: 8px;
+        }
+
+        &__image {
+            width: 100%;
+            height: 50%;
+        }
+
+        &__anchor{
+            margin-top: 8px;
+            padding: 6px;
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+            0px 0px 10px 10px rgba($color: #000000, $alpha: 0.8);
+        }
+    } 
+}

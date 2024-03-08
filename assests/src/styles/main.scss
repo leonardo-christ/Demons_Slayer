@@ -1,0 +1,141 @@
+@use 'header';
+@use 'hero';
+@use 'slayer';
+@use 'oni';
+@use 'cards';
+@use 'trailer';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.space-body {
+    padding: 4.3vw;
+    background-image: url(../images/img-fundo.jpg);
+}
+
+.title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+  }
+
+.texts {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 6px;
+    text-decoration: none;
+    color: red;
+    background-color: #d8d8d8;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #e6e6e6;
+    }
+}
+
+.btnDialog {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.dialog {
+    top: 25%;
+    max-width: 50%;
+    left: 25%;
+    background-color: #000000;
+    box-shadow: 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.98);
+    color: red;
+    border: none;
+    padding: 20px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    color: red;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    box-shadow:0px 0px 30px 40px rgba($color: #000000, $alpha: 0.9);
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .title {
+        font-size: 20px;
+      }
+    
+    .texts {
+        font-size: 14px;
+    }
+
+    .space-body {
+        padding: 12px;
+    }
+    
+    .container {
+        margin: 0 auto;
+        max-width: 1024px;
+        max-width: 90%;
+    }
+
+    .dialog {
+        top: 22%;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .title {
+        font-size: 18px;
+      }
+    
+    .texts {
+        font-size: 12px;
+    }
+
+    .space-body {
+        padding: 0;
+    }
+    
+    .container {
+        margin: 0 auto;
+        max-width: 1024px;
+        max-width: 90%;
+    }
+
+    .contents {
+        width: 90%;
+        height: 36vh;
+        top: 6%;
+        left: 0;
+        margin: 5%;
+        box-shadow:0px 0px 5px 10px rgba($color: #000000, $alpha: 0.9);
+    }
+
+    .dialog {
+        top: 16%;
+        max-width: 90%;
+        left: 6%;
+    }
+}

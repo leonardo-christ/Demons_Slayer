@@ -1,0 +1,73 @@
+.trailer {
+    position: relative;
+    height: auto;
+    
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60%;
+    }
+
+    &__title2 {
+        margin-bottom: 4vw;
+        color: red;
+        box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+        0px 0px 30px 26px rgba($color: #000000, $alpha: 0.8);
+        padding: 12px;
+        font-size: 34px;
+        border-radius: 16px;
+    }
+
+    &__video{
+        width: 30vw;
+        height: 35vh;
+        margin-bottom: 1vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .trailer{
+        height: auto;
+        
+        &__body {
+            padding: 20px 0 20px 0;
+        }
+
+        &__title2 {
+            margin-bottom: 4vw;
+            color: red;
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+            0px 0px 20px 20px rgba($color: #000000, $alpha: 0.8);
+            padding: 6px;
+            margin-bottom: 10vw;
+        }
+    
+        &__video {
+            width: 80%;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .trailer{
+        height: auto;
+        
+        &__body {
+            padding: 20px 0 20px 0;
+        }
+
+        &__title2 {
+            margin-bottom: 4vw;
+            box-shadow: inset 0px 0px 30px 40px rgba($color: #000000, $alpha: 0.8),
+            0px 0px 10px 10px rgba($color: #000000, $alpha: 0.8);
+            padding: 6px;
+            margin-bottom: 10vw;
+        }
+    
+        &__video {
+            width: 80%;
+        }
+    }
+}
