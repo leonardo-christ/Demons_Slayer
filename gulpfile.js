@@ -11,7 +11,7 @@ function style() {
 }
 
 function scripts() {
-    return gulp.src('./src/scripts/*.js')
+    return gulp.src('./assests/src/scripts/main.js')
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js'))
 }
